@@ -4,7 +4,25 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import predictionsReducer from './reducers/predictions';
+import { updatePredictions } from './actions/predictions';
+
+import { createStore } from 'redux';
+
+import { Provider } from 'react-redux';
+
+let rootStore = createStore(predictionsReducer);
+
+fetch('https://path.api.razza.dev/v1/stations/grove_street/realtime')
+    .then(response => response.json())
+    .then(data => rootStore.dispatch(updatePredictions(data)));
+
+ReactDOM.render(
+    <Provider store={rootStore}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
