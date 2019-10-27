@@ -3,6 +3,10 @@ const INITIAL_STATE = [];
 export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
     case "UPDATE_PREDICTIONS":
+      if (!("upcomingTrains" in action.payload)) {
+        return [];
+      }
+
       let newState = [];
       for (const train of action.payload.upcomingTrains) {
         const prediction = {
