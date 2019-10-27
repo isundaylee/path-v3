@@ -5,13 +5,19 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import predictionsReducer from './reducers/predictions';
-import { updatePredictions } from './actions/predictions';
+import filterReducer from './reducers/filter';
 
-import { createStore } from 'redux';
+import { updatePredictions } from './actions/predictions';
+import { setLineNameFilter } from './actions/filter';
+
+import { createStore, combineReducers } from 'redux';
 
 import { Provider } from 'react-redux';
 
-let rootStore = createStore(predictionsReducer);
+let rootStore = createStore(combineReducers({
+    predictions: predictionsReducer,
+    filter: filterReducer,
+}));
 
 fetch('https://path.api.razza.dev/v1/stations/grove_street/realtime')
     .then(response => response.json())

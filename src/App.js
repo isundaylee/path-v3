@@ -1,13 +1,44 @@
 import React from 'react';
 import './App.css';
 
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+
 import PredictionTable from './components/PredictionTable';
 
+import {setLineNameFilter} from './actions/filter';
+
 function App() {
+  const allPredictions = useSelector(state => state.predictions);
+  const filter = useSelector(state => state.filter);
+
+  const predictions = allPredictions.filter(pred => {
+    if (!filter) {
+      return true;
+    }
+
+    switch (filter.type) {
+      case 'lineName':
+        return pred.lineName == filter.lineName;
+      default:
+        console.error('Invalid filter type:', filter.type);
+        return false;
+    }
+  });
+
+  const dispatch = useDispatch();
+  const allLineNames = allPredictions.map(pred => pred.lineName);
+  const lineNameFilterButtons = allLineNames.map(lineName => {
+    const onClick = () => {
+      dispatch(setLineNameFilter(lineName));
+    };
+
+    return <button onClick={onClick}>{lineName}</button>;
+  });
+
   return (
     <div className="App">
-      <PredictionTable predictions={useSelector(a => a)} />
+      <PredictionTable predictions={predictions} />
+      {lineNameFilterButtons}
     </div>
   );
 }
