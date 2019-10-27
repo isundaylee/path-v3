@@ -19,7 +19,7 @@ function App() {
 
       switch (filter.type) {
         case "lineName":
-          return pred.lineName == filter.lineName;
+          return pred.lineName === filter.lineName;
         default:
           console.error("Invalid filter type:", filter.type);
           return false;

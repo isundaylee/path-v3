@@ -8,7 +8,6 @@ import predictionsReducer from "./reducers/predictions";
 import filterReducer from "./reducers/filter";
 
 import { updatePredictions } from "./actions/predictions";
-import { setLineNameFilter } from "./actions/filter";
 
 import { createStore, combineReducers } from "redux";
 
