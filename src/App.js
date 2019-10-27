@@ -26,7 +26,7 @@ function App() {
   });
 
   const dispatch = useDispatch();
-  const allLineNames = allPredictions.map(pred => pred.lineName);
+  const allLineNames = [...new Set(allPredictions.map(pred => pred.lineName))];
   const lineNameFilterButtons = allLineNames.map(lineName => {
     const onClick = () => {
       dispatch(setLineNameFilter(lineName));
