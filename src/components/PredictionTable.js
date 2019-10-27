@@ -19,10 +19,10 @@ class PredictionTable extends Component {
 
         return (
             <div>
-                <p>{this.props.predictions.length} predictions loaded.</p>
                 <table className='PredictionTable'>
                     {items}
                 </table>
+                <p>{this.props.predictions.length} predictions loaded.</p>
             </div>
         );
     }
