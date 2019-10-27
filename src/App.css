@@ -5,3 +5,11 @@
 .PredictionTable {
   width: 100%;
 }
+
+.PredictionTable td {
+  padding: 5px 0;
+}
+
+.PredictionItemColLineName {
+  width: 70%;
+}

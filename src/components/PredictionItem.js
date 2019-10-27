@@ -10,8 +10,8 @@ function PredictionItem(props) {
 
     return (
         <tr>
-            <td>{props.prediction.lineName}</td>
-            <td>{minutesLeft}:{secondsLeft.toString().padStart(2, '0')}</td>
+            <td className='PredictionItemColLineName'>{props.prediction.lineName}</td>
+            <td className='PredictionItemColArrivalTime'>{minutesLeft}:{secondsLeft.toString().padStart(2, '0')}</td>
         </tr>
     );
 }
