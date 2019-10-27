@@ -18,11 +18,13 @@ class PredictionTable extends Component {
         });
 
         return (
-            <div>
-                <div className='PredictionTable'>
+            <div className='PredictionTable'>
+                <div>
                     {items}
                 </div>
-                <p>{this.props.predictions.length} predictions loaded.</p>
+                <p className='count'>
+                    {this.props.predictions.length} predictions loaded.
+                </p>
             </div>
         );
     }
