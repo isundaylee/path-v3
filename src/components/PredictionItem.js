@@ -10,6 +10,11 @@ function PredictionItem(props) {
 
     const containerStyle = {backgroundColor: props.prediction.color};
 
+    const timeLeftString =
+        (totalSecondsLeft <= 0)
+            ? 'Now' 
+            : (minutesLeft.toString() + ":" + secondsLeft.toString().padStart(2, '0'));
+
     return (
         <div className='PredictionItem' style={containerStyle}>
             <div className='left'>
@@ -23,7 +28,7 @@ function PredictionItem(props) {
             </div>
             <div className='right'>
                 <div className='arrival'>
-                    {minutesLeft}:{secondsLeft.toString().padStart(2, '0')}
+                    {timeLeftString}
                 </div>
             </div>
         </div>
