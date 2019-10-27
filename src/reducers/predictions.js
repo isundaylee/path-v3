@@ -1,23 +1,42 @@
-const INITIAL_STATE = [];
+const INITIAL_STATE = {
+  predictions: [],
+  isFetching: false,
+  fetchError: null
+};
 
 export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
-    case "UPDATE_PREDICTIONS":
-      if (!("upcomingTrains" in action.payload)) {
-        return [];
+    case "REQUEST_PREDICTIONS":
+      return { ...state, isFetching: true, fetchError: null };
+
+    case "FAILURE_PREDICTIONS":
+      return {
+        ...state,
+        predictions: [],
+        isFetching: false,
+        fetchError: action.payload
+      };
+
+    case "RECEIVE_PREDICTIONS":
+      let newPredictions = [];
+      if ("upcomingTrains" in action.payload) {
+        for (const train of action.payload.upcomingTrains) {
+          const prediction = {
+            lineName: train.lineName,
+            arrivalTime: new Date(Date.parse(train.projectedArrival)),
+            status: train.status,
+            color: train.lineColors[0]
+          };
+          newPredictions.push(prediction);
+        }
       }
 
-      let newState = [];
-      for (const train of action.payload.upcomingTrains) {
-        const prediction = {
-          lineName: train.lineName,
-          arrivalTime: new Date(Date.parse(train.projectedArrival)),
-          status: train.status,
-          color: train.lineColors[0]
-        };
-        newState.push(prediction);
-      }
-      return newState;
+      return {
+        ...state,
+        predictions: newPredictions,
+        isFetching: false,
+        fetchError: null
+      };
     default:
       return state;
   }

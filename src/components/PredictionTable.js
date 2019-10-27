@@ -26,7 +26,9 @@ class PredictionTable extends Component {
       <div className="PredictionTable">
         <div>{items}</div>
         <p className="count">
-          {this.props.predictions.length} predictions loaded.
+          {this.props.isFetching
+            ? "Fetching predictions..."
+            : this.props.predictions.length.toString() + " predictions loaded."}
         </p>
       </div>
     );

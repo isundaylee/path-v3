@@ -8,7 +8,10 @@ import PredictionTable from "./components/PredictionTable";
 import { setLineNameFilter } from "./actions/filter";
 
 function App() {
-  const allPredictions = useSelector(state => state.predictions);
+  console.log(useSelector(state => state));
+
+  const isFetching = useSelector(state => state.predictions.isFetching);
+  const allPredictions = useSelector(state => state.predictions.predictions);
   const filter = useSelector(state => state.filter);
 
   const predictions = allPredictions
@@ -41,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <PredictionTable predictions={predictions} />
+      <PredictionTable isFetching={isFetching} predictions={predictions} />
       {lineNameFilterButtons}
     </div>
   );

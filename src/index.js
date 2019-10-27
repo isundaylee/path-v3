@@ -7,9 +7,10 @@ import * as serviceWorker from "./serviceWorker";
 import predictionsReducer from "./reducers/predictions";
 import filterReducer from "./reducers/filter";
 
-import { updatePredictions } from "./actions/predictions";
+import { fetchPredictions } from "./actions/predictions";
 
-import { createStore, combineReducers } from "redux";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import thunkMiddleware from "redux-thunk";
 
 import { Provider } from "react-redux";
 
@@ -17,12 +18,11 @@ let rootStore = createStore(
   combineReducers({
     predictions: predictionsReducer,
     filter: filterReducer
-  })
+  }),
+  applyMiddleware(thunkMiddleware)
 );
 
-fetch("https://path.api.razza.dev/v1/stations/grove_street/realtime")
-  .then(response => response.json())
-  .then(data => rootStore.dispatch(updatePredictions(data)));
+rootStore.dispatch(fetchPredictions("grove_street"));
 
 ReactDOM.render(
   <Provider store={rootStore}>
