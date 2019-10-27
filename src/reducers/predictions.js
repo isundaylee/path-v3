@@ -18,25 +18,13 @@ export default function(state = INITIAL_STATE, action) {
       };
 
     case "RECEIVE_PREDICTIONS":
-      let newPredictions = [];
-      if ("upcomingTrains" in action.payload) {
-        for (const train of action.payload.upcomingTrains) {
-          const prediction = {
-            lineName: train.lineName,
-            arrivalTime: new Date(Date.parse(train.projectedArrival)),
-            status: train.status,
-            color: train.lineColors[0]
-          };
-          newPredictions.push(prediction);
-        }
-      }
-
       return {
         ...state,
-        predictions: newPredictions,
+        predictions: action.payload,
         isFetching: false,
         fetchError: null
       };
+
     default:
       return state;
   }
