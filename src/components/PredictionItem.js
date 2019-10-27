@@ -8,8 +8,10 @@ function PredictionItem(props) {
     const minutesLeft = Math.floor(totalSecondsLeft / 60);
     const secondsLeft = totalSecondsLeft - 60 * minutesLeft;
 
+    const containerStyle = {backgroundColor: props.prediction.color};
+
     return (
-        <div className='PredictionItem'>
+        <div className='PredictionItem' style={containerStyle}>
             <div className='left'>
                 <div className='line'>
                     {props.prediction.lineName}

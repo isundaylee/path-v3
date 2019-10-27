@@ -8,7 +8,8 @@ export default function (state = INITIAL_STATE, action) {
                 const prediction = {
                     lineName: train.lineName,
                     arrivalTime: new Date(Date.parse(train.projectedArrival)),
-                    status: train.status
+                    status: train.status,
+                    color: train.lineColors[0],
                 };
                 newState.push(prediction);
             }
