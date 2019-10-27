@@ -23,6 +23,8 @@ function App() {
         console.error('Invalid filter type:', filter.type);
         return false;
     }
+  }).sort((a, b) => {
+    return (a.arrivalTime > b.arrivalTime);
   });
 
   const dispatch = useDispatch();
