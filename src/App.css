@@ -1,15 +1,45 @@
 .App {
-  text-align: center;
 }
 
 .PredictionTable {
   width: 100%;
 }
 
-.PredictionTable td {
-  padding: 5px 0;
+.PredictionItem {
+  margin: 0 5px;
+  padding: 15px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  border-bottom: 3px solid #777777;
 }
 
-.PredictionItemColLineName {
-  width: 70%;
+.PredictionItem .left {
+  width: 64%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.PredictionItem .line {
+  font-size: 1.3em;
+  text-align: left;
+  /* margin-top: 5px; */
+}
+
+.PredictionItem .status {
+  margin-top: 5px;
+  font-size: 1.0em;
+}
+
+.PredictionItem .right {
+  width: 26%;
+  display: inline-block;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.PredictionItem .arrival {
+  font-size: 3em;
+  line-height: 1em;
 }

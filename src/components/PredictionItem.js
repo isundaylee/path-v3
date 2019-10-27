@@ -9,10 +9,22 @@ function PredictionItem(props) {
     const secondsLeft = totalSecondsLeft - 60 * minutesLeft;
 
     return (
-        <tr>
-            <td className='PredictionItemColLineName'>{props.prediction.lineName}</td>
-            <td className='PredictionItemColArrivalTime'>{minutesLeft}:{secondsLeft.toString().padStart(2, '0')}</td>
-        </tr>
+        <div className='PredictionItem'>
+            <div className='left'>
+                <div className='line'>
+                    {props.prediction.lineName}
+                </div>
+
+                <div className='status'>
+                    {props.prediction.status}
+                </div>
+            </div>
+            <div className='right'>
+                <div className='arrival'>
+                    {minutesLeft}:{secondsLeft.toString().padStart(2, '0')}
+                </div>
+            </div>
+        </div>
     );
 }
 

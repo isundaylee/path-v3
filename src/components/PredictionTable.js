@@ -19,9 +19,9 @@ class PredictionTable extends Component {
 
         return (
             <div>
-                <table className='PredictionTable'>
+                <div className='PredictionTable'>
                     {items}
-                </table>
+                </div>
                 <p>{this.props.predictions.length} predictions loaded.</p>
             </div>
         );
