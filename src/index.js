@@ -8,7 +8,10 @@ import predictionsReducer from "./reducers/predictions";
 import filterReducer from "./reducers/filter";
 import loaderReducer from "./reducers/loader";
 
-import { fetchPredictions } from "./actions/predictions";
+import {
+  fetchPredictions,
+  fetchPredictionsFromGlitch
+} from "./actions/predictions";
 
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
@@ -24,7 +27,18 @@ let rootStore = createStore(
   applyMiddleware(thunkMiddleware)
 );
 
-rootStore.dispatch(fetchPredictions("grove_street"));
+const tokens = window.location.href.split("/");
+let station = tokens[tokens.length - 1];
+
+const DEFAULT_STATION = "world_trade_center";
+const VALID_STATIONS = ["grove_street", "world_trade_center"];
+
+if (!VALID_STATIONS.includes(station)) {
+  station = DEFAULT_STATION;
+}
+
+// rootStore.dispatch(fetchPredictions("grove_street"));
+rootStore.dispatch(fetchPredictionsFromGlitch(station));
 
 ReactDOM.render(
   <Provider store={rootStore}>

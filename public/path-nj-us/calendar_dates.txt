@@ -1,0 +1,22 @@
+service_id,date,holiday_name,exception_type
+c_17994_b_none_d_1,20191230,12/30,1
+c_17994_b_none_d_1,20191202,12/2,1
+c_17993_b_22459_d_1,20191230,12/30,2
+c_17993_b_22459_d_1,20191202,12/2,2
+c_17578_b_21578_d_30,20200101,New Year's Day,2
+c_17578_b_21578_d_30,20191225,Christmas Day,2
+c_17578_b_21578_d_30,20191128,Thanksgiving Day,2
+c_17578_b_21578_d_14,20200101,New Year's Day,2
+c_17578_b_21578_d_14,20191225,Christmas Day,2
+c_17578_b_21578_d_14,20191128,Thanksgiving Day,2
+c_16993_b_none_d_64,20200101,New Year's Day,1
+c_16993_b_none_d_64,20191225,Christmas Day,1
+c_16993_b_none_d_64,20191128,Thanksgiving Day,1
+c_16987_b_19737_d_64,20191229,12/29 Christmas Weekend,2
+c_16987_b_19737_d_64,20191201,12/1,2
+c_16986_b_19736_d_32,20191228,12/28 Christmas Weekend,2
+c_16986_b_19736_d_32,20191130,11/30,2
+c_16984_b_none_d_64,20191229,12/29 Christmas Weekend,1
+c_16984_b_none_d_64,20191201,12/1,1
+c_16983_b_none_d_32,20191228,12/28 Christmas Weekend,1
+c_16983_b_none_d_32,20191130,11/30,1

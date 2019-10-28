@@ -1,0 +1,16 @@
+[
+{"route_id":"11048","direction_id":"1","direction":"Inbound"},
+{"route_id":"11048","direction_id":"0","direction":"Outbound"},
+{"route_id":"4768","direction_id":"1","direction":"Inbound"},
+{"route_id":"4768","direction_id":"0","direction":"Outbound"},
+{"route_id":"1024","direction_id":"1","direction":"Inbound"},
+{"route_id":"1024","direction_id":"0","direction":"Outbound"},
+{"route_id":"862","direction_id":"1","direction":"Inbound"},
+{"route_id":"862","direction_id":"0","direction":"Outbound"},
+{"route_id":"861","direction_id":"1","direction":"Inbound"},
+{"route_id":"861","direction_id":"0","direction":"Outbound"},
+{"route_id":"860","direction_id":"1","direction":"Inbound"},
+{"route_id":"860","direction_id":"0","direction":"Outbound"},
+{"route_id":"859","direction_id":"1","direction":"Inbound"},
+{"route_id":"859","direction_id":"0","direction":"Outbound"}
+]

@@ -1,0 +1,23 @@
+[
+{"service_id":"c_17994_b_none_d_1","date":"20191230","holiday_name":"12/30","exception_type":"1"},
+{"service_id":"c_17994_b_none_d_1","date":"20191202","holiday_name":"12/2","exception_type":"1"},
+{"service_id":"c_17993_b_22459_d_1","date":"20191230","holiday_name":"12/30","exception_type":"2"},
+{"service_id":"c_17993_b_22459_d_1","date":"20191202","holiday_name":"12/2","exception_type":"2"},
+{"service_id":"c_17578_b_21578_d_30","date":"20200101","holiday_name":"New Year's Day","exception_type":"2"},
+{"service_id":"c_17578_b_21578_d_30","date":"20191225","holiday_name":"Christmas Day","exception_type":"2"},
+{"service_id":"c_17578_b_21578_d_30","date":"20191128","holiday_name":"Thanksgiving Day","exception_type":"2"},
+{"service_id":"c_17578_b_21578_d_14","date":"20200101","holiday_name":"New Year's Day","exception_type":"2"},
+{"service_id":"c_17578_b_21578_d_14","date":"20191225","holiday_name":"Christmas Day","exception_type":"2"},
+{"service_id":"c_17578_b_21578_d_14","date":"20191128","holiday_name":"Thanksgiving Day","exception_type":"2"},
+{"service_id":"c_16993_b_none_d_64","date":"20200101","holiday_name":"New Year's Day","exception_type":"1"},
+{"service_id":"c_16993_b_none_d_64","date":"20191225","holiday_name":"Christmas Day","exception_type":"1"},
+{"service_id":"c_16993_b_none_d_64","date":"20191128","holiday_name":"Thanksgiving Day","exception_type":"1"},
+{"service_id":"c_16987_b_19737_d_64","date":"20191229","holiday_name":"12/29 Christmas Weekend","exception_type":"2"},
+{"service_id":"c_16987_b_19737_d_64","date":"20191201","holiday_name":"12/1","exception_type":"2"},
+{"service_id":"c_16986_b_19736_d_32","date":"20191228","holiday_name":"12/28 Christmas Weekend","exception_type":"2"},
+{"service_id":"c_16986_b_19736_d_32","date":"20191130","holiday_name":"11/30","exception_type":"2"},
+{"service_id":"c_16984_b_none_d_64","date":"20191229","holiday_name":"12/29 Christmas Weekend","exception_type":"1"},
+{"service_id":"c_16984_b_none_d_64","date":"20191201","holiday_name":"12/1","exception_type":"1"},
+{"service_id":"c_16983_b_none_d_32","date":"20191228","holiday_name":"12/28 Christmas Weekend","exception_type":"1"},
+{"service_id":"c_16983_b_none_d_32","date":"20191130","holiday_name":"11/30","exception_type":"1"}
+]
