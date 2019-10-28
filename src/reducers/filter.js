@@ -1,6 +1,6 @@
 export default function(state = null, action) {
   switch (action.type) {
-    case "SET_FILTER":
+    case "FILTER_SET":
       return action.payload;
     default:
       return state;

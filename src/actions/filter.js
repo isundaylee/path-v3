@@ -1,6 +1,6 @@
 export function setLineNameFilter(filter) {
   return {
-    type: "SET_FILTER",
+    type: "FILTER_SET",
     payload: {
       type: "lineName",
       lineName: filter
@@ -10,7 +10,7 @@ export function setLineNameFilter(filter) {
 
 export function clearFilter() {
   return {
-    type: "SET_FILTER",
+    type: "FILTER_SET",
     payload: null
   };
 }
