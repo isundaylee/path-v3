@@ -1,11 +1,9 @@
 import React from "react";
 import "./App.css";
 
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 import PredictionTable from "./components/PredictionTable";
-
-import { setLineNameFilter } from "./actions/filter";
 
 function App() {
   const isFetching = useSelector(state => state.loader);
@@ -30,20 +28,9 @@ function App() {
       return a.arrivalTime > b.arrivalTime;
     });
 
-  const dispatch = useDispatch();
-  const allLineNames = [...new Set(allPredictions.map(pred => pred.lineName))];
-  const lineNameFilterButtons = allLineNames.map(lineName => {
-    const onClick = () => {
-      dispatch(setLineNameFilter(lineName));
-    };
-
-    return <button onClick={onClick}>{lineName}</button>;
-  });
-
   return (
     <div className="App">
       <PredictionTable isFetching={isFetching} predictions={predictions} />
-      {lineNameFilterButtons}
     </div>
   );
 }
