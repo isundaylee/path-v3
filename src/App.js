@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import PredictionTable from "./components/PredictionTable";
+import { clearFilter } from "./actions/filter";
 
 function App() {
   const isFetching = useSelector(state => state.loader);
+  const hasFilter = useSelector(state => state.filter !== null);
   const allPredictions = useSelector(state => state.predictions);
   const filter = useSelector(state => state.filter);
 
@@ -28,9 +30,19 @@ function App() {
       return a.arrivalTime > b.arrivalTime;
     });
 
+  const dispatch = useDispatch();
+  const onClearFilter = event => {
+    dispatch(clearFilter());
+  };
+
   return (
     <div className="App">
-      <PredictionTable isFetching={isFetching} predictions={predictions} />
+      <PredictionTable
+        isFetching={isFetching}
+        hasFilter={hasFilter}
+        onClearFilter={onClearFilter}
+        predictions={predictions}
+      />
     </div>
   );
 }

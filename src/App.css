@@ -8,6 +8,15 @@
   width: 100%;
 }
 
+.PredictionTable .show-all-button {
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #42b883;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
 .PredictionTable .count {
   font-size: 1.2em;
   text-align: center;

@@ -7,3 +7,10 @@ export function setLineNameFilter(filter) {
     }
   };
 }
+
+export function clearFilter() {
+  return {
+    type: "SET_FILTER",
+    payload: null
+  };
+}

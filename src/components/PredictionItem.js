@@ -1,5 +1,8 @@
 import React from "react";
 
+import { useDispatch } from "react-redux";
+import { setLineNameFilter } from "../actions/filter";
+
 function PredictionItem(props) {
   const totalSecondsLeft = Math.floor(
     (props.prediction.arrivalTime - props.currentTime) / 1000
@@ -15,8 +18,13 @@ function PredictionItem(props) {
       ? "Now"
       : minutesLeft.toString() + ":" + secondsLeft.toString().padStart(2, "0");
 
+  const dispatch = useDispatch();
+  const onClick = event => {
+    dispatch(setLineNameFilter(props.prediction.lineName));
+  };
+
   return (
-    <div className="PredictionItem" style={containerStyle}>
+    <div className="PredictionItem" style={containerStyle} onClick={onClick}>
       <div className="left">
         <div className="line">{props.prediction.lineName}</div>
 

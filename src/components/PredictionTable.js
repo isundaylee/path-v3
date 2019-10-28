@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { useSelector } from "react-redux";
+
 import PredictionItem from "./PredictionItem";
 
 class PredictionTable extends Component {
@@ -25,6 +27,11 @@ class PredictionTable extends Component {
     return (
       <div className="PredictionTable">
         <div>{items}</div>
+        {this.props.hasFilter && (
+          <p className="show-all-button" onClick={this.props.onClearFilter}>
+            Show All Predictions
+          </p>
+        )}
         <p className="count">
           {this.props.isFetching
             ? "Fetching predictions..."
