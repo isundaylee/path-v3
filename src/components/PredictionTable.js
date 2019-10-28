@@ -26,12 +26,12 @@ class PredictionTable extends Component {
 
     return (
       <div className="PredictionTable">
-        <div>{items}</div>
         {this.props.hasFilter && (
           <p className="show-all-button" onClick={this.props.onClearFilter}>
             Show All Predictions
           </p>
         )}
+        <div>{items}</div>
         <p className="count">
           {this.props.isFetching
             ? "Fetching predictions..."
