@@ -6,6 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 
 import predictionsReducer from "./reducers/predictions";
 import filterReducer from "./reducers/filter";
+import loaderReducer from "./reducers/loader";
 
 import { fetchPredictions } from "./actions/predictions";
 
@@ -17,7 +18,8 @@ import { Provider } from "react-redux";
 let rootStore = createStore(
   combineReducers({
     predictions: predictionsReducer,
-    filter: filterReducer
+    filter: filterReducer,
+    loader: loaderReducer
   }),
   applyMiddleware(thunkMiddleware)
 );

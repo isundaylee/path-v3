@@ -1,40 +1,31 @@
-function requestPredictions() {
-  return {
-    type: "REQUEST_PREDICTIONS"
-  };
-}
+import { setLoader } from "./loader";
 
-function receivePredictions(json) {
+function setPredictions(predictions) {
   return {
-    type: "RECEIVE_PREDICTIONS",
-    payload: json
-  };
-}
-
-function failurePredictions(error) {
-  return {
-    type: "FAILURE_PREDICTIONS",
-    payload: error
+    type: "PREDICTIONS_SET",
+    payload: predictions
   };
 }
 
 export function fetchPredictions(stationName) {
   return function(dispatch) {
-    dispatch(requestPredictions());
+    dispatch(setLoader(true));
 
     return fetch(
       "https://path.api.razza.dev/v1/stations/" + stationName + "/realtime"
     ).then(
       response => {
+        dispatch(setLoader(false));
+
         if (response.ok) {
           response.json().then(data => {
             if (!("upcomingTrains" in data)) {
-              dispatch(receivePredictions([]));
+              dispatch(setPredictions([]));
               return;
             }
 
             dispatch(
-              receivePredictions(
+              setPredictions(
                 data.upcomingTrains.map(pred => {
                   return {
                     lineName: pred.lineName,
@@ -47,10 +38,13 @@ export function fetchPredictions(stationName) {
             );
           });
         } else {
-          dispatch(failurePredictions(Error(response.statusText)));
+          dispatch(setPredictions([]));
         }
       },
-      error => dispatch(failurePredictions(error))
+      error => {
+        dispatch(setLoader(false));
+        dispatch(setPredictions([]));
+      }
     );
   };
 }
