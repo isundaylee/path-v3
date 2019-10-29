@@ -1,5 +1,4 @@
 import { setLoader } from "./loader";
-import { merge } from "rxjs";
 
 function setPredictions(predictions) {
   return {
@@ -232,6 +231,8 @@ const getPredictions = arrivals => {
 export function fetchPredictionsFromGlitch(stationName) {
   return async dispatch => {
     dispatch(setLoader(true));
+
+    const dates = [];
 
     const dateServicesMap = await getServicesForDates(["20191027", "20191028"]);
     const dateTripsMap = await getTripsForDates(dateServicesMap);
