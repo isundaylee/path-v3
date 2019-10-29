@@ -1,4 +1,5 @@
 import { setLoader } from "./loader";
+import { DateTime } from "luxon";
 
 function setPredictions(predictions) {
   return {
@@ -232,9 +233,10 @@ export function fetchPredictionsFromGlitch(stationName) {
   return async dispatch => {
     dispatch(setLoader(true));
 
-    const dates = [];
-
-    const dateServicesMap = await getServicesForDates(["20191027", "20191028"]);
+    const today = DateTime.local();
+    const tomorrow = today.plus({ days: 1 });
+    const dateStrs = [today, tomorrow].map(date => date.toFormat("yyyyMMdd"));
+    const dateServicesMap = await getServicesForDates(dateStrs);
     const dateTripsMap = await getTripsForDates(dateServicesMap);
     const dateArrivalsMap = await getArrivalsForTrips(
       STOP_ID_MAP[stationName],
