@@ -23,6 +23,19 @@ function PredictionItem(props) {
     dispatch(setLineNameFilter(props.prediction.lineName));
   };
 
+  const onTimeClick = async event => {
+    const resp = await (await fetch("/remind", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        lineName: props.prediction.lineName,
+        arrivalTimestamp: props.prediction.arrivalTime.getTime() / 1000
+      })
+    })).json();
+  };
+
   return (
     <div className="PredictionItem" style={containerStyle} onClick={onClick}>
       <div className="left">
@@ -31,7 +44,9 @@ function PredictionItem(props) {
         <div className="status">{props.prediction.status}</div>
       </div>
       <div className="right">
-        <div className="arrival">{timeLeftString}</div>
+        <div className="arrival" onClick={onTimeClick}>
+          {timeLeftString}
+        </div>
       </div>
     </div>
   );
