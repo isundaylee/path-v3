@@ -36,10 +36,18 @@ function PredictionItem(props) {
     })).json();
   };
 
+  const lineNameReplaces = {
+    "Journal Square via Hoboken": "Journal Square via Hob",
+    "33rd via Hoboken": "33rd via Hob"
+  };
+
+  const lineName =
+    lineNameReplaces[props.prediction.lineName] || props.prediction.lineName;
+
   return (
     <div className="PredictionItem" style={containerStyle} onClick={onClick}>
       <div className="left">
-        <div className="line">{props.prediction.lineName}</div>
+        <div className="line">{lineName}</div>
 
         <div className="status">{props.prediction.status}</div>
       </div>
