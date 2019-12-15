@@ -13,6 +13,10 @@ app = Flask("path-v3", static_folder="build", static_url_path="/")
 scheduler = sched.scheduler(time.time, time.sleep)
 
 
+@app.route('/')
+def index():
+    return send_from_directory('build', 'index.html')
+
 @app.route("/remind", methods=["POST"])
 def remind():
     def send_reminder(line_name, seconds_left):
