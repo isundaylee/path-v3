@@ -27,8 +27,8 @@ let rootStore = createStore(
   applyMiddleware(thunkMiddleware)
 );
 
-const tokens = window.location.href.split("/");
-let station = tokens[tokens.length - 1];
+const params = new URLSearchParams(window.location.search);
+let station = params.get("station");
 
 const DEFAULT_STATION = "world_trade_center";
 const VALID_STATIONS = ["grove_street", "world_trade_center"];
