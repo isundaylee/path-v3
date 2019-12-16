@@ -3,4 +3,5 @@
         "editor.formatOnSave": true,
     },
     "emmet.triggerExpansionOnTab": true,
+    "python.pythonPath": "env/bin/python",
 }
