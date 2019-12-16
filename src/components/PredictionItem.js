@@ -2,6 +2,7 @@ import React from "react";
 
 import { useDispatch } from "react-redux";
 import { setLineNameFilter } from "../actions/filter";
+import { requestReminder } from "../actions/reminders";
 
 function PredictionItem(props) {
   const totalSecondsLeft = Math.floor(
@@ -24,16 +25,13 @@ function PredictionItem(props) {
   };
 
   const onTimeClick = async event => {
-    const resp = await (await fetch("/remind", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        lineName: props.prediction.lineName,
-        arrivalTimestamp: props.prediction.arrivalTime.getTime() / 1000
-      })
-    })).json();
+    dispatch(
+      requestReminder(
+        props.prediction.tripId,
+        props.prediction.lineName,
+        props.prediction.arrivalTime
+      )
+    );
   };
 
   const lineNameReplaces = {
@@ -53,7 +51,14 @@ function PredictionItem(props) {
       </div>
       <div className="right">
         <div className="arrival" onClick={onTimeClick}>
-          {timeLeftString}
+          {
+            {
+              unrequested: timeLeftString,
+              requesting: "...",
+              requested: "Set",
+              error: "Error"
+            }[props.reminderStatus]
+          }
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 import predictionsReducer from "./reducers/predictions";
 import filterReducer from "./reducers/filter";
 import loaderReducer from "./reducers/loader";
+import remindersReducer from "./reducers/reminders";
 
 import {
   fetchPredictions,
@@ -22,7 +23,8 @@ let rootStore = createStore(
   combineReducers({
     predictions: predictionsReducer,
     filter: filterReducer,
-    loader: loaderReducer
+    loader: loaderReducer,
+    reminders: remindersReducer
   }),
   applyMiddleware(thunkMiddleware)
 );

@@ -20,6 +20,7 @@ class PredictionTable extends Component {
           key={index}
           currentTime={this.state.currentTime}
           prediction={pred}
+          reminderStatus={this.props.reminders[pred.tripId] || "unrequested"}
         />
       );
     });

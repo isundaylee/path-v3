@@ -30,6 +30,8 @@ function App() {
       return a.arrivalTime > b.arrivalTime;
     });
 
+  const reminders = useSelector(state => state.reminders);
+
   const dispatch = useDispatch();
   const onClearFilter = event => {
     dispatch(clearFilter());
@@ -42,6 +44,7 @@ function App() {
         hasFilter={hasFilter}
         onClearFilter={onClearFilter}
         predictions={predictions}
+        reminders={reminders}
       />
     </div>
   );

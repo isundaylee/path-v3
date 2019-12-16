@@ -221,6 +221,7 @@ const mergeAndFilterArrivals = dateArrivalsMapAnnotated => {
 const getPredictions = arrivals => {
   return arrivals.map(arrival => {
     return {
+      tripId: arrival.tripId,
       lineName: arrival.routeName,
       arrivalTime: arrival.arrivalTime,
       status: "From Schedule",
