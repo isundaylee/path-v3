@@ -43,8 +43,8 @@ function PredictionItem(props) {
     lineNameReplaces[props.prediction.lineName] || props.prediction.lineName;
 
   return (
-    <div className="PredictionItem" style={containerStyle} onClick={onClick}>
-      <div className="left">
+    <div className="PredictionItem" style={containerStyle}>
+      <div className="left" onClick={onClick}>
         <div className="line">{lineName}</div>
 
         <div className="status">{props.prediction.status}</div>
