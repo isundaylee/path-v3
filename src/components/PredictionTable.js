@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import { useSelector } from "react-redux";
-
 import PredictionItem from "./PredictionItem";
 
 class PredictionTable extends Component {

@@ -9,10 +9,7 @@ import filterReducer from "./reducers/filter";
 import loaderReducer from "./reducers/loader";
 import remindersReducer from "./reducers/reminders";
 
-import {
-  fetchPredictions,
-  fetchPredictionsFromGlitch
-} from "./actions/predictions";
+import { fetchPredictionsFromGlitch } from "./actions/predictions";
 
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
