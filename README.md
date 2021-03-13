@@ -2,6 +2,21 @@
 
 Toy React project for showing the NJ PATH timetable.
 
+## Run it
+
+Just the frontend:
+
+```
+npm start
+```
+
+Frontend + backend (needs to build first):
+
+``
+npm run build
+python main.py
+```
+
 ## Update data
 
 Get data from https://old.panynj.gov/path/developers.html
