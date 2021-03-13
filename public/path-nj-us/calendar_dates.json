@@ -1,23 +1,20 @@
 [
-{"service_id":"c_17994_b_none_d_1","date":"20191230","holiday_name":"12/30","exception_type":"1"},
-{"service_id":"c_17994_b_none_d_1","date":"20191202","holiday_name":"12/2","exception_type":"1"},
-{"service_id":"c_17993_b_22459_d_1","date":"20191230","holiday_name":"12/30","exception_type":"2"},
-{"service_id":"c_17993_b_22459_d_1","date":"20191202","holiday_name":"12/2","exception_type":"2"},
-{"service_id":"c_17578_b_21578_d_30","date":"20200101","holiday_name":"New Year's Day","exception_type":"2"},
-{"service_id":"c_17578_b_21578_d_30","date":"20191225","holiday_name":"Christmas Day","exception_type":"2"},
-{"service_id":"c_17578_b_21578_d_30","date":"20191128","holiday_name":"Thanksgiving Day","exception_type":"2"},
-{"service_id":"c_17578_b_21578_d_14","date":"20200101","holiday_name":"New Year's Day","exception_type":"2"},
-{"service_id":"c_17578_b_21578_d_14","date":"20191225","holiday_name":"Christmas Day","exception_type":"2"},
-{"service_id":"c_17578_b_21578_d_14","date":"20191128","holiday_name":"Thanksgiving Day","exception_type":"2"},
-{"service_id":"c_16993_b_none_d_64","date":"20200101","holiday_name":"New Year's Day","exception_type":"1"},
-{"service_id":"c_16993_b_none_d_64","date":"20191225","holiday_name":"Christmas Day","exception_type":"1"},
-{"service_id":"c_16993_b_none_d_64","date":"20191128","holiday_name":"Thanksgiving Day","exception_type":"1"},
-{"service_id":"c_16987_b_19737_d_64","date":"20191229","holiday_name":"12/29 Christmas Weekend","exception_type":"2"},
-{"service_id":"c_16987_b_19737_d_64","date":"20191201","holiday_name":"12/1","exception_type":"2"},
-{"service_id":"c_16986_b_19736_d_32","date":"20191228","holiday_name":"12/28 Christmas Weekend","exception_type":"2"},
-{"service_id":"c_16986_b_19736_d_32","date":"20191130","holiday_name":"11/30","exception_type":"2"},
-{"service_id":"c_16984_b_none_d_64","date":"20191229","holiday_name":"12/29 Christmas Weekend","exception_type":"1"},
-{"service_id":"c_16984_b_none_d_64","date":"20191201","holiday_name":"12/1","exception_type":"1"},
-{"service_id":"c_16983_b_none_d_32","date":"20191228","holiday_name":"12/28 Christmas Weekend","exception_type":"1"},
-{"service_id":"c_16983_b_none_d_32","date":"20191130","holiday_name":"11/30","exception_type":"1"}
+{ "service_id": "c_21125_b_none_d_64", "date": "20210228", "holiday_name": "Newport Closure", "exception_type": "1" }
+,{ "service_id": "c_20913_b_none_d_31", "date": "20210301", "holiday_name": "Newport Closure", "exception_type": "1" }
+,{ "service_id": "c_20803_b_none_d_0", "date": "20211125", "holiday_name": "Thanksgiving Day", "exception_type": "1" }
+,{ "service_id": "c_20803_b_none_d_0", "date": "20211111", "holiday_name": "Veterans Day", "exception_type": "1" }
+,{ "service_id": "c_20803_b_none_d_0", "date": "20211011", "holiday_name": "Columbus Day", "exception_type": "1" }
+,{ "service_id": "c_20803_b_none_d_0", "date": "20210906", "holiday_name": "Labor Day", "exception_type": "1" }
+,{ "service_id": "c_20803_b_none_d_0", "date": "20210704", "holiday_name": "Independence Day", "exception_type": "1" }
+,{ "service_id": "c_20803_b_none_d_0", "date": "20210531", "holiday_name": "Memorial Day", "exception_type": "1" }
+,{ "service_id": "c_20460_b_27412_d_31", "date": "20211126", "holiday_name": "Day After Thanksgiving ", "exception_type": "2" }
+,{ "service_id": "c_20460_b_27412_d_31", "date": "20211125", "holiday_name": "Thanksgiving Day", "exception_type": "2" }
+,{ "service_id": "c_20460_b_27412_d_31", "date": "20211111", "holiday_name": "Veterans Day", "exception_type": "2" }
+,{ "service_id": "c_20460_b_27412_d_31", "date": "20211011", "holiday_name": "Columbus Day", "exception_type": "2" }
+,{ "service_id": "c_20460_b_27412_d_31", "date": "20210906", "holiday_name": "Labor Day", "exception_type": "2" }
+,{ "service_id": "c_20460_b_27412_d_31", "date": "20210531", "holiday_name": "Memorial Day", "exception_type": "2" }
+,{ "service_id": "c_20460_b_27412_d_31", "date": "20210301", "holiday_name": "Newport Closure", "exception_type": "2" }
+,{ "service_id": "c_19861_b_26688_d_64", "date": "20210704", "holiday_name": "Independence Day", "exception_type": "2" }
+,{ "service_id": "c_19861_b_26688_d_64", "date": "20210228", "holiday_name": "Newport Closure", "exception_type": "2" }
+,{ "service_id": "c_18229_b_none_d_31", "date": "20211126", "holiday_name": "Day After Thanksgiving ", "exception_type": "1" }
 ]

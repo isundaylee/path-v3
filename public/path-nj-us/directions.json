@@ -1,16 +1,14 @@
 [
-{"route_id":"11048","direction_id":"1","direction":"Inbound"},
-{"route_id":"11048","direction_id":"0","direction":"Outbound"},
-{"route_id":"4768","direction_id":"1","direction":"Inbound"},
-{"route_id":"4768","direction_id":"0","direction":"Outbound"},
-{"route_id":"1024","direction_id":"1","direction":"Inbound"},
-{"route_id":"1024","direction_id":"0","direction":"Outbound"},
-{"route_id":"862","direction_id":"1","direction":"Inbound"},
-{"route_id":"862","direction_id":"0","direction":"Outbound"},
-{"route_id":"861","direction_id":"1","direction":"Inbound"},
-{"route_id":"861","direction_id":"0","direction":"Outbound"},
-{"route_id":"860","direction_id":"1","direction":"Inbound"},
-{"route_id":"860","direction_id":"0","direction":"Outbound"},
-{"route_id":"859","direction_id":"1","direction":"Inbound"},
-{"route_id":"859","direction_id":"0","direction":"Outbound"}
+{ "route_id": "859", "direction_id": "0", "direction": "To Hoboken" }
+,{ "route_id": "859", "direction_id": "1", "direction": "To 33rd" }
+,{ "route_id": "860", "direction_id": "0", "direction": "To Hoboken" }
+,{ "route_id": "860", "direction_id": "1", "direction": "To WTC" }
+,{ "route_id": "861", "direction_id": "0", "direction": "To Journal Sq" }
+,{ "route_id": "861", "direction_id": "1", "direction": "To 33rd" }
+,{ "route_id": "862", "direction_id": "0", "direction": "To Newark" }
+,{ "route_id": "862", "direction_id": "1", "direction": "To WTC" }
+,{ "route_id": "1024", "direction_id": "0", "direction": "To Journal Sq" }
+,{ "route_id": "1024", "direction_id": "1", "direction": "To 33rd" }
+,{ "route_id": "5744", "direction_id": "0", "direction": "No direction" }
+,{ "route_id": "9508", "direction_id": "0", "direction": "No direction" }
 ]

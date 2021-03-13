@@ -1,17 +1,10 @@
 stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
-2324931,110,,"Terminal A, P6",,40.773265,-73.886284,,,0,,America/New_York,,,0
-2324933,200,,Terminal B – Upper Level,,40.7743283135265,-73.8722010233135,,,0,,America/New_York,,,0
+2324931,110,,"Marine Terminal A, P6",,40.773265,-73.886284,,,0,,America/New_York,,,0
 2324934,300,,"Terminal C – Lower Level, P4",,40.770269,-73.864533,,,0,,America/New_York,,,0
-2324935,400,,"Terminal D - Lower Level - Stop 1, P5",,40.7683443582313,-73.8618677662878,,,0,,America/New_York,,,0
-2324936,420,,"Hourly Parking, Cell Phone Lot (P5)",,40.767808,-73.860764,,,0,,America/New_York,,,0
-2324937,130,,Long Term Parking (P10),,40.7748095986071,-73.8845750846558,,,0,,America/New_York,,,0
-2324940,,,Lot P7,,40.769908,-73.886854,,,0,,America/New_York,,,0
-2324941,500,,Manager's Parking Lot,,40.768464,-73.876212,,,0,,America/New_York,,,0
-2324942,100,,"Terminal A, P6, Rental Car Pick-Up",,40.77375,-73.88585,,,0,,America/New_York,,,0
-2324943,410,,"Terminal D - Lower Level - Stop 2, P4",,40.768697,-73.862365,,,0,,America/New_York,,,0
 2324945,120,,Hangar 7 South,,40.771058,-73.885487,,,0,,America/New_York,,,0
-2428720,,,Car Services (App-Based Rides) / Black Car Pick-up,,40.771723502293,-73.878822095228,,,0,,America/New_York,,,0
-2428721,,,Terminal B - Lower Level,,40.774202680155,-73.87222043444,,,0,,America/New_York,,,0
+2615485,,,Terminal B - Ground Level,,40.772666,-73.872556,,,0,,America/New_York,,,0
+2615488,,,Hangar 5,,40.7708589611765,-73.8798532867775,,,0,,America/New_York,,,0
+2629087,,,Port Authority Shuttle Stop,,40.7721970793606,-73.8757800445177,,,0,,America/New_York,,,0
 26722,,,14th Street,,40.73735,-73.99684,,,1,,America/New_York,,,0
 26723,,,23rd Street,,40.7429,-73.99278,,,1,,America/New_York,,,0
 26724,,,33rd Street,,40.74912,-73.98827,,,1,,America/New_York,,,0
@@ -53,9 +46,6 @@ stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,st
 781740,,,33rd Street,,40.74912,-73.98827,,,0,26724,,,,0
 781741,,,33rd Street,,40.74912,-73.98827,,,0,26724,,,,0
 781763,,,World Trade Center,,40.71271,-74.01193,,,0,26734,,,,0
-781764,,,World Trade Center,,40.71271,-74.01193,,,0,26734,,,,0
-781765,,,World Trade Center,,40.71271,-74.01193,,,0,26734,,,,0
-781766,,,World Trade Center,,40.71271,-74.01193,,,0,26734,,,,0
 782490,,,Newark,,40.7344,-74.1635,,,2,26733,,,,0
 782491,,,Newark,,40.7343,-74.1649,,,2,26733,,,,0
 782492,,,Harrison,,40.739,-74.1558,,,2,26729,,,,0

@@ -1,4 +1,4 @@
 [
-{"agency_id":"631","agency_url":"http://laguardiaairport.com/at-the-airport/connecting-within-laguardia/","agency_lang":"en","agency_name":"Port Authority of NY and NJ","agency_phone":"(718) 533-3400","agency_timezone":"America/New_York","agency_fare_url":""},
-{"agency_id":"151","agency_url":"http://www.panynj.gov/path/","agency_lang":"en","agency_name":"Port Authority Trans-Hudson Corporation","agency_phone":"(800) 234-7284","agency_timezone":"America/New_York","agency_fare_url":"http://www.panynj.gov/path/fares.html"}
+{ "agency_id": "151", "agency_url": "http://www.panynj.gov/path/", "agency_lang": "en", "agency_name": "Port Authority Trans-Hudson Corporation", "agency_phone": "(800) 234-7284", "agency_timezone": "America/New_York", "agency_fare_url": "http://www.panynj.gov/path/fares.html" }
+,{ "agency_id": "631", "agency_url": "http://laguardiaairport.com/at-the-airport/connecting-within-laguardia/", "agency_lang": "en", "agency_name": "Port Authority of NY and NJ", "agency_phone": "(718) 533-3400", "agency_timezone": "America/New_York", "agency_fare_url": "" }
 ]

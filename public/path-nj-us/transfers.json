@@ -1,3 +1,6 @@
 [
-
+{ "from_stop_id": "781715", "to_stop_id": "781715", "transfer_type": "1", "min_transfer_time": "" }
+,{ "from_stop_id": "781716", "to_stop_id": "781716", "transfer_type": "1", "min_transfer_time": "" }
+,{ "from_stop_id": "781728", "to_stop_id": "781728", "transfer_type": "1", "min_transfer_time": "" }
+,{ "from_stop_id": "781729", "to_stop_id": "781729", "transfer_type": "1", "min_transfer_time": "" }
 ]

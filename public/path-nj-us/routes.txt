@@ -1,12 +1,8 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted
-631,5744,,Blue Route,10 - B,3,,1c5fa9,ffffff,0,5,0
-631,5745,,Red Route,10 - C/D,3,,cf302c,ffffff,1,6,0
-151,862,PATH,Newark - World Trade Center,"Weekend Service Changes Through 2020: World Trade Center Station CLOSED WEEKENDS, excluding major holidays, to replace equipment damaged during Superstorm Sandy. WTC station reopens Mondays at 5:00 a.m. More at http://www.panynj.gov/StayOnTrack",2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,d93a30,ffffff,10,3,0
-631,5746,,Purple Route,B - C/D,3,,792b79,ffffff,2,8,0
-631,9508,,Green Route,,3,,61b635,000000,3,5,0
-151,859,PATH,Hoboken - 33rd Street,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,4d92fb,000000,4,6,0
-151,860,PATH,Hoboken - World Trade Center,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,65c100,000000,5,5,0
-151,1024,PATH,Journal Square - 33rd Street (via Hoboken),,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,ff9900,000000,6,10,0
-151,4768,PATH,Journal Square - Hoboken,,2,,ff9900,000000,7,,0
-151,11048,PATH,Journal Square - World Trade Center (via Hoboken),,2,,ff9900,000000,8,,0
-151,861,PATH,Journal Square - 33rd Street,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,ff9900,000000,9,4,0
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off
+151,859,PATH,Hoboken - 33rd Street,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,4d92fb,000000,0,6,0,1,1
+151,860,PATH,Hoboken - World Trade Center,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,65c100,000000,1,5,0,1,1
+151,862,PATH,Newark - World Trade Center,"Weekend Service Changes Through 2020: World Trade Center Station CLOSED WEEKENDS, excluding major holidays, to replace equipment damaged during Superstorm Sandy. WTC station reopens Mondays at 5:00 a.m. More at http://www.panynj.gov/StayOnTrack",2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,d93a30,ffffff,2,4,0,1,1
+151,861,PATH,Journal Square - 33rd Street,,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,ff9900,000000,3,5,0,1,1
+151,1024,PATH,Journal Square - 33rd Street (via Hoboken),,2,http://www.panynj.gov/path/pdf/path-map-schedule-english_dec25.pdf,ff9900,000000,4,10,0,1,1
+631,9508,,Green Route,,3,,61b635,000000,7,,0,1,1
+631,5744,,Blue Route,10 - B,3,,1c5fa9,ffffff,8,10,0,1,1

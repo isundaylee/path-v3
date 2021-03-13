@@ -1,10 +1,6 @@
 [
-{"service_id":"c_2597_b_643_d_64","service_name":"Port Authority of NY and NJ (Sunday only)","monday":"0","tuesday":"0","wednesday":"0","thursday":"0","friday":"0","saturday":"0","sunday":"1","start_date":"20170201","end_date":"20200101"},
-{"service_id":"c_2597_b_643_d_32","service_name":"Port Authority of NY and NJ (Saturday only)","monday":"0","tuesday":"0","wednesday":"0","thursday":"0","friday":"0","saturday":"1","sunday":"0","start_date":"20170201","end_date":"20200101"},
-{"service_id":"c_2597_b_643_d_31","service_name":"Port Authority of NY and NJ (Weekday)","monday":"1","tuesday":"1","wednesday":"1","thursday":"1","friday":"1","saturday":"0","sunday":"0","start_date":"20170201","end_date":"20200101"},
-{"service_id":"c_2597_b_643_d_127","service_name":"Port Authority of NY and NJ (All days of week)","monday":"1","tuesday":"1","wednesday":"1","thursday":"1","friday":"1","saturday":"1","sunday":"1","start_date":"20170201","end_date":"20200101"},
-{"service_id":"c_17993_b_22459_d_1","service_name":"Monday Baseline (Monday only)","monday":"1","tuesday":"0","wednesday":"0","thursday":"0","friday":"0","saturday":"0","sunday":"0","start_date":"20190617","end_date":"20200101"},
-{"service_id":"c_17578_b_21578_d_30","service_name":"Tues-Fri Baseline (TuWThF)","monday":"0","tuesday":"1","wednesday":"1","thursday":"1","friday":"1","saturday":"0","sunday":"0","start_date":"20190617","end_date":"20200101"},
-{"service_id":"c_16987_b_19737_d_64","service_name":"Sunday WTC Closure (Sunday only)","monday":"0","tuesday":"0","wednesday":"0","thursday":"0","friday":"0","saturday":"0","sunday":"1","start_date":"20190407","end_date":"20200101"},
-{"service_id":"c_16986_b_19736_d_32","service_name":"Saturday WTC Closure (Saturday only)","monday":"0","tuesday":"0","wednesday":"0","thursday":"0","friday":"0","saturday":"1","sunday":"0","start_date":"20190407","end_date":"20200101"}
+{ "service_id": "c_20460_b_27412_d_31", "service_name": "Weekday Baseline (Weekday)", "monday": "1", "tuesday": "1", "wednesday": "1", "thursday": "1", "friday": "1", "saturday": "0", "sunday": "0", "start_date": "20200913", "end_date": "20220201" }
+,{ "service_id": "c_20176_b_26810_d_127", "service_name": "Port Authority of NY and NJ starting 6/13/20 (All days of week)", "monday": "1", "tuesday": "1", "wednesday": "1", "thursday": "1", "friday": "1", "saturday": "1", "sunday": "1", "start_date": "20200613", "end_date": "20220201" }
+,{ "service_id": "c_19861_b_26688_d_64", "service_name": "Sunday WTC Open (Sunday only)", "monday": "0", "tuesday": "0", "wednesday": "0", "thursday": "0", "friday": "0", "saturday": "0", "sunday": "1", "start_date": "20200614", "end_date": "20220201" }
+,{ "service_id": "c_19860_b_26687_d_32", "service_name": "Saturday WTC Open (Saturday only)", "monday": "0", "tuesday": "0", "wednesday": "0", "thursday": "0", "friday": "0", "saturday": "1", "sunday": "0", "start_date": "20200614", "end_date": "20220201" }
 ]
